@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "textlint": "textlint \"./{articles,books}/*.md\""
+    "textlint": "textlint ./articles/c81d1174e0197e.md"
   },
   "repository": {
     "type": "git",
