@@ -1,21 +1,17 @@
 name: textlint
-on:
-  push:
-    paths:
-      - "**.md"
-
+on: push:
 jobs:
   build:
-    name: test
+    name: check textlint
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
         with:
           fetch-depth: 1
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
-          node-version: 12.x
+          node-version: 14.x
       - run: yarn install
       - name: Check Textlint
         run: textlint \"./{articles}/**/*.md\"
