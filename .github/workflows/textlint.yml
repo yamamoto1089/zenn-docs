@@ -1,5 +1,5 @@
 name: textlint
-on: push:
+on: push
 jobs:
   build:
     name: check textlint
