@@ -14,4 +14,4 @@ jobs:
           node-version: 14.x
       - run: yarn install
       - name: Check Textlint
-        run: yarn textlint ./articles/*.md
+        run: yarn run textlint
