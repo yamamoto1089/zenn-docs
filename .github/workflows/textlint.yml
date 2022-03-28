@@ -1,0 +1,21 @@
+name: textlint
+on:
+  push:
+    paths:
+      - "**.md"
+
+jobs:
+  build:
+    name: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - run: yarn install
+      - name: Check Textlint
+        run: textlint \"./{src,mock,docs}/**/*.md\"
