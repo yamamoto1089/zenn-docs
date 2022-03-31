@@ -6,5 +6,5 @@ rules:
     max-kanji-continuous-len: false
   preset-ja-spacing:
     ja-space-around-code:
-    before: true
-    after: true
+      before: true
+      after: true
