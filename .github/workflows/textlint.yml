@@ -13,3 +13,5 @@ jobs:
       - run: yarn install
       - name: Check Textlint
         run: yarn run textlint
+      - name: fix Textlint
+        run: yarn run textlint:fix
