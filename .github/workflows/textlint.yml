@@ -11,18 +11,16 @@ jobs:
         with:
           node-version: 14.x
       - run: yarn install
-      # - name: Check Textlint
-      #   run: yarn run textlint
-      - name: Fix Textlint
+      - name: textlintのエラーを自動修正
         run: yarn run textlint:fix
-      - name: Git Account Setting
+      - name: Githubの設定
         run: |
           git remote set-url origin https://github-actions:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
           git config --global user.name $GITHUB_ACTOR
           git config --global user.email $GITHUB_ACTOR@user.noreply.github.com
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: diff commit and push
+      - name: textlintの自動修正をマージ
         run: |
           git add .;
           git commit -m "textlint auto fixed";
