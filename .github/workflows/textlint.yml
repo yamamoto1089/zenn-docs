@@ -13,5 +13,18 @@ jobs:
       - run: yarn install
       - name: Check Textlint
         run: yarn run textlint
-      - name: fix Textlint
+      - name: Fix Textlint
         run: yarn run textlint:fix
+      - name: Git Account Setting
+        run: |
+          git remote set-url origin https://github-actions:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
+          git config --global user.name $GITHUB_ACTOR
+          git config --global user.email $GITHUB_ACTOR@user.noreply.github.com
+        env: GITHUB_TOKEN: ${{ sercrets.GITHUB_TOKEN }}
+      - name: diff commit and push
+        run: |
+          git add .;
+          git commit -m "textlint auto fixed";
+          git push origin HEAD:${GITHUB_REF};
+
+
