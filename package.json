@@ -27,5 +27,8 @@
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-preset-ja-spacing": "^2.2.0",
     "textlint-rule-preset-ja-technical-writing": "^7.0.0"
+  },
+  "volta": {
+    "node": "16.14.2"
   }
 }
