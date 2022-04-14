@@ -1,21 +1,36 @@
 ---
-title: "textlintのエラーを自動修正してみた"
+title: "textlintのエラーをGithubActionsで自動修正してみた"
 emoji: "🖋"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["markdown","textlint","GithubActions"]
 published: false
 ---
 
-`テスト` です  
+# はじめに
 
-`これ` と `これ` のスペースのテスト。
+以前投稿した記事、「Github連携されたZennの記事をtextlintで自動チェックする」の続きになります。  
+https://zenn.dev/ymmt1089/articles/c81d1174e0197e 
 
-あとは全角のエラーのテスト
+以前投稿した記事、「Github連携されたZennの記事をtextlintで自動チェックする」ではGithubActionsでtextlintを走らせるだけでした。  
+しかし、textlintでエラーが出た場合、手動で修正し再びプッシュするのは面倒です。  
+今回はtextlintは自動修正機能がありますので、Githubにプッシュしたタイミングで自動修正し、修正結果を自動でマージする方法を共有します。  
 
-でが2回も使われてるでのですと  
+# 前提
 
-全角が間に　隠れているテスト
+[以前の記事](https://zenn.dev/ymmt1089/articles/c81d1174e0197e)の続きなので、Githubの記述や基本的な設定は前回の記事を参考にしてください。  
 
-なになにをできますという冗長な文章
+# 今回できるようになること
+例えば以下のような文章をGithubにプッシュすると。
 
-文末が。終わってないよのテスト。
+GithubActions上でtextlintの自動修正が実行され。
+
+ブランチにプッシュしてくれます。
+
+結果、以下のように自動修正されたものがブランチにマージされました。
+
+
+`インラインコードのテスト`です。  
+
+`インラインコード`と`インラインコード`のスペースのテスト。  
+
+末尾に全角スペースが存在するテスト。　　
