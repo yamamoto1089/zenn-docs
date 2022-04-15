@@ -3,7 +3,7 @@ title: "textlintのエラーをGithubActionsで自動修正してみた"
 emoji: "🖋"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["markdown","textlint","GithubActions"]
-published: false
+published: true
 ---
 
 # はじめに
