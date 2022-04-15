@@ -53,36 +53,6 @@ textlintで自動修正を行うオプションは標準で用意されていま
 ここからはGithubActionsにプッシュされた後に実行することを設定していきます。  
 前回作成した `textlint.yml` に追加していきます。
 
-```yml:textlint.yml
-name: textlint
-on: push
-jobs:
-  build:
-    name: check textlint
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 16.x
-      - run: yarn install
-      - name: textlintのエラーを自動修正
-        run: yarn run textlint:fix
-      - name: Githubの設定
-        run: |
-          git remote set-url origin https://github-actions:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
-          git config --global user.name $GITHUB_ACTOR
-          git config --global user.email $GITHUB_ACTOR@user.noreply.github.com
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: textlintの自動修正をマージ
-        run: |
-          git add .;
-          git commit -m "🖋textlint auto fixed!!!🖋";
-          git push origin HEAD:${GITHUB_REF};
-
-```
 
 ## texilintの自動修正実行
 
