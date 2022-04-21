@@ -53,7 +53,7 @@ javascript: alert('hello world');
 
 # 検索画面のURLを見てみる
 
-はじめに例に挙げた「Zennの記事を検索できるブックマークレット」を作成した手順について記述していきます。  
+`はじめに`で例に挙げた「Zennの記事を検索できるブックマークレット」を作成した手順について記述していきます。  
 
 まずは[Zennの検索ページ](https://zenn.dev/search)に遷移します。
 ```shell:URL
@@ -81,7 +81,7 @@ javascript: window.open('https://zenn.dev/search?q={検索ワード}');
 
 ## window.prompt
 
-任意の検索ワードをURLの `{検索ワード}` 部分に渡します。　　
+任意の検索ワードをURLの `{検索ワード}` 部分に渡します。  
 方法はいくつかありそうですが、今回は[window.prompt](https://developer.mozilla.org/ja/docs/Web/API/Window/prompt)を使用します。  
 `window.prompt();` を実行すると、テキスト入力フィールドを持ったダイアログが表示されます。  
 テキスト入力フィールドに入力した値がそのまま返却されるので、`window.prompt()` を `{検索ワード}` 部分に埋め込みます。
@@ -100,7 +100,7 @@ javascript: window.open('https://zenn.dev/search?q='+window.prompt('zennで検�
 
 ## getSelection
 
-余談ですが、文字列を取得する方法として[getSelection](https://developer.mozilla.org/ja/docs/Web/API/Window/getSelection)があります。　　
+余談ですが、文字列を取得する方法として[getSelection](https://developer.mozilla.org/ja/docs/Web/API/Window/getSelection)があります。  
 選択中の文字列を取得できるので、「選択中の文字列をZennで検索する」ことができます。
 
 ```js
@@ -152,7 +152,7 @@ javascript: window.open('https://translate.google.co.jp/?hl=ja&sl=en&tl=ja&text=
 # おわりに
 ブックマークレットではJavaScriptのコードを簡単に実行できました。  
 
-ブックマークレットを共有するだけで他人でも同じコードを実行できることもブックマークレットの利点です。例えば、ログイン処理を行うブックマークレットを作成すれば、ワンクリックでログインができ、案件内でそのログイン処理を共有することもできそうです。
+ブックマークレットを共有するだけで他人でも同じコードを実行できることもブックマークレットの利点です。例えば、ログイン処理を行うブックマークレットを作成すれば、ワンクリックでログインができ、案件内でそのログイン処理を共有することも可能です。
 
 windowインターフェイスの組み合わせやコードの次第で、より便利なブックマークレットを作成できそうです。  
 
