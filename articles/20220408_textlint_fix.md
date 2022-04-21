@@ -34,7 +34,7 @@ textlintの自動修正に関して、lintエラー全てを修正できるわ�
 まずはローカルでもtextlintの自動修正が実行できるようにpackage.jsonにコマンドを追加します。
 ## package.jsonの修正
 
-textlintで自動修正を行うオプションは標準で用意されています。  
+textlintで自動修正をするオプションは標準で用意されています。  
 `yarn textlint {ファイル名} --fix` のように末尾に `--fix` のオプションをつけるだけです。  
 
 ```diff json:package.json
@@ -50,7 +50,7 @@ textlintで自動修正を行うオプションは標準で用意されていま
 
 # GithubActionsのワークフロー追加
 
-ここからはGithubActionsにプッシュされた後に実行することを設定していきます。  
+ここからはGithubActionsへプッシュされた後に実行することを設定していきます。  
 前回作成した `textlint.yml` に追加していきます。
 
 
@@ -81,7 +81,7 @@ jobs:
 
 ## Githubの設定
 
-次にGiuhubActionsからGiuhubにプッシュを行うための設定です。　　
+次にGiuhubActionsからGiuhubにプッシュを行うための設定です。  
 `.gitconfig` のグローバルに設定している `user.name` や `user.email` を設定しています。
 
 ```diff yml:textlint.yml
@@ -149,7 +149,7 @@ jobs:
 
 # おわりに
 Githubにプッシュしたタイミングでtestlintの自動修正をおこなってくれるのは便利に感じました。  
-ただ、textlintの自動修正をおこなっても差分がなかった場合にGithubActionsでエラーになることが課題として残っています。　　
+ただ、textlintの自動修正をおこなっても差分がなかった場合にGithubActionsでエラーになることが課題として残っています。  
 差分がある場合のみプッシュのフローを実行できるように、修正の余地がありそうです。
 (参考記事の「GitHub Actionsでワークフロー中に発生した差分をPushする」ではその点も考慮されています。)
 
