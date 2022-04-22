@@ -3,7 +3,7 @@ title: "簡易的なブックマークレットを作ってみた"
 emoji: "📖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["javascript","bookmarklet","Chrome"]
-published: false
+published: true
 ---
 
 # はじめに
