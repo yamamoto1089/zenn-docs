@@ -76,7 +76,7 @@ npm install {ライブラリ名} --save # express本体のインストール
 npm install @types/{ライブラリ名} --save-dev # 型定義ファイルのインストール
 ```
 
-## 型定義ファイル無し
+## [型定義ファイル無し](https://typescriptbook.jp/reference/declaration-file#%E5%9E%8B%E5%AE%9A%E7%BE%A9%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%84%A1%E3%81%97)
 型定義ファイルがないライブラリなので、以下のどちらかで対処できます。
 * `any` 型で妥協する
 * 型定義ファイルを作る
@@ -86,7 +86,7 @@ npm install @types/{ライブラリ名} --save-dev # 型定義ファイルのイ
 型定義ファイル自体が存在しないことでエラーが出ていたので、`giojs.d.ts` を作成しました。  
 型定義ファイルを作成したのでエラー自体は出なくなりましたが、詳細な型定義がされていないので暗黙的に `any` 型になります。  
 
-## 型定義ファイルを作る
+### 型定義ファイルを作る
 型定義ファイルを自作して[DefinitelyTyped](http://definitelytyped.org/guides/contributing.html)に公開する対処法です。  
 かなり時間と労力を使う対処法にはなります。
 
