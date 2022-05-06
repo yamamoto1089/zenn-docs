@@ -3,7 +3,7 @@ title: "型定義ファイルのないライブラリのインポートエラー
 emoji: "🎛"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['TypeScript','JavaScript']
-published: false
+published: true
 ---
 
 # はじめに
@@ -99,3 +99,8 @@ npm install @types/{ライブラリ名} --save-dev # 型定義ファイルのイ
 
 時間に余裕がなければ、型定義ファイルがない場合は `.d.ts` ファイルで仮の型定義ファイルを作成し `any` 型を許容するしかない気もします。 　
 型安全を担保できなくなるので、トレードオフな気もしますが。
+
+# 参考記事
+https://typescriptbook.jp/reference/declaration-file
+https://bnsgt.hatenablog.com/entry/2021/12/24/193825
+https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/README.ja.md
