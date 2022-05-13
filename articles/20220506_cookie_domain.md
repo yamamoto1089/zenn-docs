@@ -3,7 +3,7 @@ title: "（今更だけど）cookieのdomain属性について少し理解を深
 emoji: "🍪"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['JavaScript', 'cookie','web','http']
-published: false
+published: true
 ---
 
 # はじめに
