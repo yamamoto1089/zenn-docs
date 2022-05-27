@@ -3,7 +3,7 @@ title: "Babylon.jsでキューブを表示してみた"
 emoji: "🧊"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['Babylon.js','TypeScript','WebGL']
-published: false
+published: true
 ---
 
 # はじめに
