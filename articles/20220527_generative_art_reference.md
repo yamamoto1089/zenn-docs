@@ -3,7 +3,7 @@ title: "GenerativeArt界隈について調べてみた"
 emoji: "🦆"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ['GenerativeArt','Processing','p5js']
-published: false
+published: true
 ---
 
 # はじめに
@@ -106,7 +106,7 @@ Processingで作成した作品をを公開したり、共有したりできる�
 
 https://openprocessing.org/
 
-# 最後に
+# おわりに
 GenerativeArt界隈は公開されている情報が多く、また、アートである以上正解がありません。  
 自分がいいと思った表現をNFTアートとして販売できる環境も整っています。  
 今回紹介させてもらった人物やイベントやサイトにそれぞれ目的や思想があったように、自分がいいと思うものをGenerativeArtととして表現できればいいなと思います。
