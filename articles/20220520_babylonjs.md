@@ -50,7 +50,7 @@ create-next-appで作成したプロジェクトの1画面でBabylon.jsのキュ
 早速インストールします。
 
 ```
-yarn add -D  @babylonjs/core
+yarn add @babylonjs/core
 ```
 
 Babylon.jsのインストールには `@babylonjs/core` と `babylonjs` があります。  
