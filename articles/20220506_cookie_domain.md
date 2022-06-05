@@ -19,6 +19,8 @@ domain属性の理解に時間がかかったので、今回はdomain属性に�
 domain属性ではcookieを送信する対象のURLを定義できます。  
 domain属性に設定したdomainと送信先のdomainが一致していれば送信できます。
 
+<!-- textlint-disable -->
+
 例を挙げると
 cookieをセットしたdomainが
 ```
@@ -37,6 +39,8 @@ example.com
 hoge.example.com
 ```
 であればリクエストヘッダーにcookieをセットすることはできません。
+
+<!-- textlint-enable -->
 
 ## domain属性の一致判定
 domain属性の一致判定には「完全一致」と「後方一致」の2種類あります。  
@@ -75,12 +79,12 @@ chromeのdevToolを用いれば簡単に確認できます。
 
 ![](https://storage.googleapis.com/zenn-user-upload/b16945fdf547-20220513.png)　
 
-cookieをセットしてみます。　　
+cookieをセットしてみます。  
 コンソール画面で以下のscriptを実行します。
 ```js
 document.cookie = "test_key=test_value;";
 ```
-するとアプリケーション画面でcookieがセットできていることが確認できます。　　
+するとアプリケーション画面でcookieがセットできていることが確認できます。  
 cookieのdomainは `www.google.com` となっており現在のホストのdomainがセットされています。  
 ![](https://storage.googleapis.com/zenn-user-upload/0d00372a14c7-20220513.png)
 
@@ -103,9 +107,9 @@ document.cookie = "test_key=test_value_3; domain=examlpe";
 このようにdomain指定したcookieや未指定のcookieのセットを実行して簡単な挙動を試せます。
 
 # おわりに
-cookieってよく使う割にライブラリに頼りがちです。  
-自分みたいに何も理解できていないと「なぜかcookieがdev環境でだけRequestHeaderに付与されない」「なぜかcookieか削除できない」ってことになります。  
-理解しないまま実装した最悪の場合、[cookieを使用した攻撃](https://securitynews.so-net.ne.jp/topics/sec_20172.html)の標的になり損失につながりかねませんね。こわ。  
+cookieを扱う際はライブラリに頼りがちです。  
+自分のように何も理解できていないと、「cookieがdev環境でだけRequestHeaderに付与されない」「cookieか削除できない」ってことが起こります。  
+理解しないまま実装した最悪の場合、[cookieを使用した攻撃](https://securitynews.so-net.ne.jp/topics/sec_20172.html)の標的になり損失が発生するかも知れません。こわ。  
 ライブラリやフレームワークより、こういう基礎の学習って大事だなと思いました。  
 
 # 参考記事

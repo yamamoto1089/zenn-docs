@@ -30,7 +30,7 @@ https://www.npmtrends.com/babylonjs-vs-three
 * 公式ドキュメントが丁寧かつ豊富
 
 特にPlayGroundが使えるのはかなり強力です。PlayGroundを使えば、記述したコードが表示される3Dモデルにどのように影響を与えるかを目視できます。  
-WebGLではシェーダーやライトの設定などの組み合わせで表示が変わるため、PlayGroundで動きを確認できることは重要なメリットのように思います。  
+WebGLではシェーダーやライトの設定などの組み合わせで表示が変わるため、PlayGroundで動きを確認できることはメリットとして大きいですね。  
 またTypeScriptのサポートが手厚いので、TypeScriptを使用したプロジェクトへの導入がしやすいことや、型推論で使用できる関数の補完ができるのでかなり直感的に使用できます。
 
 # 使ってみる
@@ -55,7 +55,7 @@ yarn add -D  @babylonjs/core
 
 Babylon.jsのインストールには `@babylonjs/core` と `babylonjs` があります。  
 この2つの違いはTree-Shakingが利用できるかの違いで、@babylonjs/coreでインストールすればTree-Shakingが利用できます。  
-基本的に `@babylonjs/core` でインストールでいいかなと思います。  
+基本的に `@babylonjs/core` でインストールでいいです。  
 Webpackを使用するプロジェクトが多いですし、Tree-Shakingが利用できるのであれば使いたいですしね。
 
 ## コード記述
@@ -63,7 +63,6 @@ Webpackを使用するプロジェクトが多いですし、Tree-Shakingが利�
 各コードの説明は後述します。
 
 Nextを使用しているので、pages配下にindex.tsxファイルを作成して以下のコードを記述します。  
-（ツッコミどころが多いコードだと思いますが、多めにみてください🙇‍♂️）
 
 ```tsx : /pages/babylonjs/index.tsx
 import { NextPage } from "next";
@@ -113,7 +112,7 @@ export default Babylonjs;
 
 ```
 
-これだけで画面にはキューブが表示されていると思いますので確認しましょう。
+これだけで画面にはキューブが表示されているので確認しましょう。
 
 
 ## 表示確認
@@ -153,12 +152,15 @@ engineは3Dを表示するための基礎の部分ですね。engineの上に新
 
 `createDefaultEnvironment` でどこまでの設定を行なっているかわからないのですが、背景の色など環境部分の設定を行なっていそうです。（詳しくわかれば追記します🙇‍♂️）  
 
-本来であればここでシェーダー、カメラ、照明、etc...の記述が必要で、初めからそれらを記述するのは骨が折れます。　　
+本来であればここでシェーダー、カメラ、照明、etc...の記述が必要で、初めからそれらを記述するのは骨が折れます。  
 なので今回はデフォルトで用意されている関数を利用しました。
 
 ここで使用した2つの関数を利用することで簡単に3Dオブジェクトを表示する環境を構築できます。  
+<!-- textlint-disable -->
+
 [公式ドキュメント](https://doc.babylonjs.com/divingDeeper/scene/fastBuildWorld#how-to-fast-build-a-world)でも、「このやり方が一番早いと思います（意訳）」って言ってます。
 
+<!-- textlint-enable -->
 ### 3Dモデルの設定
 ```tsx
     // モデル（今回はキューブの設定）
@@ -177,7 +179,7 @@ MeshBuilderにはCreateBox以外にもさまざまな形状のモデルを生成
 Babylon.jsで簡単にキューブを表示できました。  
 three.jsからBabylon.jsnに乗り換えたという記事も目にしたので、これからWebGLのライブラリを使うならBabylon.jsも候補に入れていい気がします。
 
-メタバースだとかxRという単語をよく耳にするようになりました。  
+最近メタバースだとかxRという単語をよく耳にします。
 その流れでWebGLの需要が高まってWebで面白い表現ができるようになると楽しそうですね。
 
 

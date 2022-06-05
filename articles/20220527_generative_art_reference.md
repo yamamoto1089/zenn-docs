@@ -14,7 +14,7 @@ GenerativeArt"界隈"の情報収集の助けになれば幸いです。
 
 # GenerativeArtとは
 明確な定義はないようですが、個人的に「数学的なアルゴリズムを用いて表現された幾何学的なもの」だと思っています。  
-以下のサイトで見れるものが、自分が思うGenerativeArtに近いです。  
+以下のサイトで見られるものが、自分のイメージするGenerativeArtに近いです。  
 http://www.bnn.co.jp/support/generativedesign_p5js/
 
 この記事ではProcessingやp5jsで作成できるもののことをGenerativeArtと呼びます。  
@@ -37,9 +37,9 @@ http://www.bnn.co.jp/support/generativedesign_p5js/
 ## 田所淳
 https://twitter.com/tadokoro?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor
 
-Processing,p5js,GenerativeArt,openFrameworks,ライブコーディング,etc... この辺りの単語を調べて出てくる書籍の著者に必ずと言っていいほど名前があります。  
+Processing、p5js、GenerativeArt、openFrameworks、ライブコーディング、etcこの辺りの単語を調べて出てくる書籍の著者に必ずと言っていいほど名前があります。  
 田所さんのサイト、[yoppa](https://yoppa.org/)では書籍の紹介のほかにも講義ノートやスライドなどを無料で公開されてます。(とてもありがたい🙏)  
-講義資料であるために初心者にもわかりやすく書かれていているため、「興味はあるけどどこから始めよう。。。」という時にとても参考になります。  
+講義資料で初心者向けに分かりやすく書かれていているため、「興味はあるけど何から始めていいかわからない。」という際は参考になります。  
 
 ## Takawo Shunsuke
 https://twitter.com/takawo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor
@@ -51,7 +51,7 @@ https://twitter.com/takawo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eautho
 高尾さんはNFTアートプロジェクト、[Generativemasks](https://generativemasks.io/)を発表した人です。  
 Generativemasksはプログラムで作成された1万点のNFTアートワークを販売したプロジェクトで、発表から2時間ほどで完売したことで話題になりました。  
 
-こちらのインタビュー記事ではどのような経緯でGenerativemasksを立ち上げる背景について知れます。　　
+こちらのインタビュー記事ではどのような経緯でGenerativemasksを立ち上げる背景について知れます。  
 特にNFTアートを販売する目的ではないことや、高尾さんの収益は寄付されていることなどが読み取れます。  
 https://sb-rs.com/article/2548
 
@@ -67,7 +67,7 @@ https://niinomi.art/about
 ## PCD Tokyo
 https://pcd-tokyo.github.io/
 
-引用
+以下引用文。
 > PCDとは、Processing Community Day(プロセッシング・コミュニティー・デー)の略です。
 > Processing のユーザーの交流イベントで、アートとプログラミングのコミュニティの多様性を祝って 世界各地で開催されています。
 > 日本では ライゾマティクス 真鍋大度 様、イレブンプレイ MIKIKO 様、OpenProcessing 様の協力のもと、2021年2月20・21日に オンライン にて開催されま> す。
@@ -82,7 +82,7 @@ PCD Tokyoで名前が上がる方のtwitterを追うだけでGenerativeArt界隈
 このタグではProcessingを使用したGenerativeArtのツイートを見ることができます。  
 またtwitterで表現する以上、1ツイートに収まる文字数制限以内で完成させる必要があるため、記述されているコードはかなり簡略化されています。  
 つぶやきProcessing界隈ではコードの文字数を少なくし、いかに表現の幅を広げるかに集約されており、[tips](https://note.com/aq_kani/n/nc25b1f26ba7d)を書かれている人もいます。  
-※ツイートの文字制限は280文字ですが、`#つぶやきProcessing` のハッシュタグを含めると260文字。。。
+※ツイートの文字制限は280文字ですが、`#つぶやきProcessing` のハッシュタグを含めると260文字。
 
 また、つぶやきProcessingに関わる情報をリツイートするアカウントもあります。
 https://twitter.com/tweetprocessing
@@ -90,12 +90,12 @@ https://twitter.com/tweetprocessing
 # サイト
 ## NEORT
 NIINOMIさんの作成されたアートプラットフォームです。  
-誰でも作品を登録でき、またNFTアートとして販売することもできます。
+誰でも作品を登録でき、またNFTアートとして販売できます。
 https://neort.io/latest
 
 ## artblocks
 こちらもNFTアートとして販売・購入できる海外のサイトです。  
-少し変わっているのが作品が生成されるまでの仕組みです。　　
+作品が生成されるまでの仕組みが少し変わっています。  
 クリエイターがGenerativeArtを生成するスクリプトをアップロードして販売し、購入者が購入した時点でスクリプトが実行、ランダムにデザインが生成されることで初めて作品になります。  
 
 https://www.artblocks.io/
@@ -109,4 +109,4 @@ https://openprocessing.org/
 # おわりに
 GenerativeArt界隈は公開されている情報が多く、また、アートである以上正解がありません。  
 自分がいいと思った表現をNFTアートとして販売できる環境も整っています。  
-今回紹介させてもらった人物やイベントやサイトにそれぞれ目的や思想があったように、自分がいいと思うものをGenerativeArtととして表現できればいいなと思います。
+今回紹介させてもらった人物、イベント、サイトにそれぞれ目的や思想があったように、自分がいいと感じるものをGenerativeArtととして表現できれば楽しいですね。
