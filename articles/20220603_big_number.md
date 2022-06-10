@@ -3,19 +3,15 @@ title: "JavaScriptにおける丸め誤差と対応"
 emoji: "📐"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['javascript','big.js','bignumber.js','decimal.js']
-published: false
+published: true
 ---
 
 # 丸め誤差とは
 小数点以下の計算を行った際に発生する誤差のことです。  
-
 Chromeのコンソール画面で確認してみます。  
 ![](https://storage.googleapis.com/zenn-user-upload/caf816e6f22d-20220610.png)
-
 実行結果として `0.1` になることを期待していましたが、`0.09999999999999998` になってしまいました。
-
 小数点以下の計算自体あまり行うことはないかもしれませんが、外貨計算など金額を扱う際には必要になってきます。  
-
 今回はその原因と丸め誤差に対応するJavaScriptライブラリ(big.js,bignumber.js,decimal.js)の選定方法について記載していきます。  
 
 # なぜ丸め誤差が起きるか
@@ -25,7 +21,6 @@ Chromeのコンソール画面で確認してみます。
 小数点以下の数字は2進数で表され、浮動小数点の計算も2進数で行われます。  
 その際に2進数で表せない数の場合は近似値で表されることになり、誤差が生じます。
 この近似値は実際の数値と比べて多少誤差がある上に、近似値同士で計算された場合に誤差が顕著に現れます。  
-
 その結果、さっきの例のように、
 
 ```js
@@ -46,7 +41,6 @@ IEEE754に準じている以上、誤差が生まれることは正しいです�
 
 実際に試してみると小数点以下19桁で丸め誤差が発生していました。
 ![](https://storage.googleapis.com/zenn-user-upload/7697acb1621b-20220610.png)
-
 数値が2進数においてどのくらいの近似値で表されるかによって何桁で丸め誤差が発生するかは違ってきます。  
 なのでMDNでも**約17桁**という表現なんですかね。
 
@@ -66,7 +60,6 @@ JavaScriptのライブラリでは計算に特化したライブラリがいく�
 ます。
 
 `npm trends` でライブラリを比較してみました。  
-
 **big.js vs bignumber.js vs decimal.js vs mathjs vs numeraljs**  
 https://www.npmtrends.com/big.js-vs-bignumber.js-vs-mathjs-vs-numeraljs-vs-decimal.js
 比較結果を見る限り `big.js`、`bignumber.js`、`decimal.js` あたりがよく使われているようですね。  
@@ -79,15 +72,12 @@ https://www.npmtrends.com/big.js-vs-bignumber.js-vs-mathjs-vs-numeraljs-vs-decim
 
 # ライブラリの違い
 `big.js`、`bignumber.js`、`decimal.js` のライブラリの違いについて記述していきます。  
-
 各ライブラリがどのように異なるのかについては2015年あたりから常にユーザーの疑問だったようです。[当時のIssue](https://github.com/MikeMcl/big.js/issues/45)ではそれぞれの違いについて質問が寄せられ、結果的に[違いについて記述されたwiki](https://github.com/MikeMcl/big.js/wiki)が作成されました。  
 それぞれの違いの詳細はwikiで確認できます。
 https://github.com/MikeMcl/big.js/wiki
 
 ## big.js
-
 https://github.com/MikeMcl/big.js
-
 npm trendsでは一番使用されていました。  
 また[TypeScriptDeepDive](https://typescript-jp.gitbook.io/deep-dive/recap/number#big.js)でも財務計算の場合はbig.jsのようなライブラリを使用するように書かれています。  
 
@@ -103,7 +93,6 @@ npm trendsでは一番使用されていました。
 
 ## bignumber.js
 https://github.com/MikeMcl/bignumber.js/
-
 ### 特徴
 * 整数と小数に対応
 * フル機能のシンプルなAPIが使える
@@ -115,7 +104,6 @@ https://github.com/MikeMcl/bignumber.js/
 
 ## decimal.js
 https://github.com/MikeMcl/decimal.js/
-
 ### 特徴
 * 整数と浮動小数点数に対応
 * フル機能のシンプルなAPIが使える
