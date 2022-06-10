@@ -13,7 +13,7 @@ published: false
 Chromeのコンソール画面で確認してみます。  
 ![](https://storage.googleapis.com/zenn-user-upload/caf816e6f22d-20220610.png)
 
-実行結果として`0.1`になることを期待していましたが、`0.09999999999999998`になってしまいました。
+実行結果として `0.1` になることを期待していましたが、`0.09999999999999998` になってしまいました。
 
 小数点以下の計算自体あまり行うことはないかもしれませんが、外貨計算など金額を扱う際には必要になってきます。  
 
@@ -33,7 +33,7 @@ Chromeのコンソール画面で確認してみます。
 0.3-0.2
 -> 0.09999999999999998
 ```
-となり、期待値の0.1から`0.00000000000000002`ほど誤差が生まれます。  
+となり、期待値の0.1から `0.00000000000000002` ほど誤差が生まれます。  
 
 IEEE754に準じている以上、誤差が生まれることは正しいです。　　
 またIEEE754はさまざまなシステムが採用しているのでJavaScriptに限った話ではないです。  
@@ -66,11 +66,11 @@ IEEE754に準じている以上、誤差が生まれることは正しいです�
 JavaScriptのライブラリでは計算に特化したライブラリがいくつかあり、これらのライブラリは丸め誤差についても考慮されてい
 ます。
 
-`npm trends`でライブラリを比較してみました。  
+`npm trends` でライブラリを比較してみました。  
 
 **big.js vs bignumber.js vs decimal.js vs mathjs vs numeraljs**  
 https://www.npmtrends.com/big.js-vs-bignumber.js-vs-mathjs-vs-numeraljs-vs-decimal.js
-比較結果を見る限り`big.js`、`bignumber.js`、`decimal.js`あたりがよく使われているようですね。  
+比較結果を見る限り `big.js`、`bignumber.js`、`decimal.js` あたりがよく使われているようですね。  
 
 でもそれぞれのライブラリはどのように使い分けを行うのでしょうか？  
 試しにbig.jsのREADMEを読んでみると以下の記述がありました。  
@@ -79,7 +79,7 @@ https://www.npmtrends.com/big.js-vs-bignumber.js-vs-mathjs-vs-numeraljs-vs-decim
 そもそもこの3つのライブラリの製作者は[MikeMcl](https://github.com/MikeMcl)という同一人物で、用途ごとに3つのライブラリを作成したようです。  
 
 # ライブラリの違い
-`big.js`、`bignumber.js`、`decimal.js`のライブラリの違いについて記述していきます。  
+`big.js`、`bignumber.js`、`decimal.js` のライブラリの違いについて記述していきます。  
 
 各ライブラリがどのように異なるのかについては2015年あたりから常にユーザーの疑問だったようです。[当時のIssue](https://github.com/MikeMcl/big.js/issues/45)ではそれぞれの違いについて質問が寄せられ、結果的に[違いについて記述されたwiki](https://github.com/MikeMcl/big.js/wiki)が作成されました。  
 それぞれの違いの詳細はwikiで確認できます。
@@ -128,8 +128,8 @@ https://github.com/MikeMcl/decimal.js/
 * TypeScript宣言ファイルが含まれる(decimal.d.ts)
 
 # 所感
-基本的には`bignumber.js`を使用するのでいいのかなと思います。容量はbig.jsよりは大きいものの展開時19KBほどなので、導入を懸念するほどではなさそうです。  
-簡単な計算しか行わないのであれば`big.js`、三角関数を使うようなより複雑な計算をするなら`decimal.js`という使い分けでしょうか。
+基本的には `bignumber.js` を使用するのでいいのかなと思います。容量はbig.jsよりは大きいものの展開時19KBほどなので、導入を懸念するほどではなさそうです。  
+簡単な計算しか行わないのであれば `big.js`、三角関数を使うようなより複雑な計算をするなら `decimal.js` という使い分けでしょうか。
 
 金額などの計算を扱う際にはこのような誤差も考慮する必要がありそうです。  
 
