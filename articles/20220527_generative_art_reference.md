@@ -35,14 +35,14 @@ http://www.bnn.co.jp/support/generativedesign_p5js/
 
 # 人物
 ## 田所淳
-https://twitter.com/tadokoro
+https://twitter.com/tadokoro?s=20&t=v2DJbZnSyfJyE55orkzbJw
 
 Processing、p5js、GenerativeArt、openFrameworks、ライブコーディング、etcこの辺りの単語を調べて出てくる書籍の著者に必ずと言っていいほど名前があります。  
 田所さんのサイト、[yoppa](https://yoppa.org/)では書籍の紹介のほかにも講義ノートやスライドなどを無料で公開されてます。(とてもありがたい🙏)  
 講義資料で初心者向けに分かりやすく書かれていているため、「興味はあるけど何から始めていいかわからない。」という際は参考になります。  
 
 ## Takawo Shunsuke
-https://twitter.com/takawo
+https://twitter.com/takawo?s=20&t=ok0xEj_02_E1iiqTMPt0tQ
 
 デイリーコーディング(つぶやきProcessing)のTwitterのタグで知りました。  
 デイリーコーディングの人、継続して作品を生み出す人の印象が強いです。  
@@ -56,7 +56,7 @@ Generativemasksはプログラムで作成された1万点のNFTアートワー�
 https://sb-rs.com/article/2548
 
 ## NIINOMI
-https://twitter.com/r21nomi
+https://twitter.com/r21nomi?s=20&t=EfvdYZ3X-1YlagX74_4Jzg
 
 [NEORT](https://neort.io/popular)のCEOです。
 自身もさまざまな作品を発表されています。
