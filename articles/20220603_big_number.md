@@ -47,33 +47,35 @@ IEEE754に準じている以上、誤差が生まれることは正しいです�
 # 丸め誤差の対応
 
 丸め誤差の対応方法としては、
+
 * 小数点を整数に直して計算する
-* ライブラリを使用する
-だと思っています。
+* ライブラリを使用する  
+
+の2つがあると思っています。
 
 ## 小数点を整数に直して計算する
 そもそも丸め誤差が発生するのは浮動小数点が2進数で正しく表せないためです。なので一度整数に置き換えて計算し、計算結果を再び小数点に戻すというやり方です。  
 局所的に丸め誤差を回避したい場合などはこのやり方で良いかもしれませんが、かなり手間な上に整数⇄小数点の変換でミスを起こしそうなのでお勧めはしません。  
 
 ## ライブラリを使用する
-JavaScriptのライブラリでは計算に特化したライブラリがいくつかあり、これらのライブラリは丸め誤差についても考慮されてい
-ます。
+JavaScriptのライブラリでは計算に特化したライブラリがいくつかあり、これらのライブラリは丸め誤差についても考慮されています。
 
-`npm trends` でライブラリを比較してみました。  
+npm trendsでライブラリを比較してみました。  
 **big.js vs bignumber.js vs decimal.js vs mathjs vs numeraljs**  
 https://www.npmtrends.com/big.js-vs-bignumber.js-vs-mathjs-vs-numeraljs-vs-decimal.js
 比較結果を見る限り `big.js`、`bignumber.js`、`decimal.js` あたりがよく使われているようですね。  
 
 でもそれぞれのライブラリはどのように使い分けを行うのでしょうか？  
-試しにbig.jsのREADMEを読んでみると以下の記述がありました。  
-> The little sister to bignumber.js and decimal.js. See here for some notes on the difference between them.
+試しにbig.jsのREADMEを読んでみると、使い分けに関するヒントが書いてありました。  
+> The little sister to bignumber.js and decimal.js. See [here](https://github.com/MikeMcl/big.js/wiki) for some notes on the difference between them.
 
 そもそもこの3つのライブラリの製作者は[MikeMcl](https://github.com/MikeMcl)という同一人物で、用途ごとに3つのライブラリを作成したようです。  
 
 # ライブラリの違い
 `big.js`、`bignumber.js`、`decimal.js` のライブラリの違いについて記述していきます。  
 各ライブラリがどのように異なるのかについては2015年あたりから常にユーザーの疑問だったようです。[当時のIssue](https://github.com/MikeMcl/big.js/issues/45)ではそれぞれの違いについて質問が寄せられ、結果的に[違いについて記述されたwiki](https://github.com/MikeMcl/big.js/wiki)が作成されました。  
-それぞれの違いの詳細はwikiで確認できます。
+それぞれの違いの詳細はwikiで確認できます。  
+
 https://github.com/MikeMcl/big.js/wiki
 
 ## big.js
@@ -86,7 +88,6 @@ npm trendsでは一番使用されていました。
 * JavaのBigDecimalのJavaScriptバージョンよりも速く、小さく、使いやすい
 * 容量は6KBとサイズが小さい
 * 10進浮動小数点形式で値を格納する
-* 包括的なドキュメントとテストセット
 * 依存関係なし
 * ECMAScript3のみを使用するため、すべてのブラウザで機能する
 
@@ -116,7 +117,7 @@ https://github.com/MikeMcl/decimal.js/
 
 # 所感
 基本的には `bignumber.js` を使用するのでいいのかなと思います。容量はbig.jsよりは大きいものの展開時19KBほどなので、導入を懸念するほどではなさそうです。  
-簡単な計算しか行わないのであれば `big.js`、三角関数を使うようなより複雑な計算をするなら `decimal.js` という使い分けでしょうか。
+簡単な計算しか行わないのであれば `big.js`、三角関数を使うような複雑な計算をするなら `decimal.js` という使い分けでしょうか。
 
 そもそも金額の計算とか怖いのでJavaScriptでやりたくないです。。。  
 
