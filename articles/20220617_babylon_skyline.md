@@ -2,16 +2,16 @@
 title: "Babylon.jsを使ってNextアプリでGiuHubSkylineを表示させたい"
 emoji: "🧊"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ['babylonjs','javascript','next']
+topics: ['babylonjs','javascript','next','webgls']
 published: false
 ---
 
 # はじめに
 
-Githubのプロフィール画面なんて滅多に開かないんですが、久しぶりに見てみると `Pull Shark` とかいうバッチが追加されてました。  
+Githubのプロフィール画面なんて滅多に開かないんですが、久しぶりに見てみると、 `Pull Shark` とかいうバッチが追加されてました。  
 ![](https://storage.googleapis.com/zenn-user-upload/90408d9e6d8a-20220618.png)
 
-最近Githubに[Achievementsのバッチが追加](https://zenn.dev/nyancat/articles/20220612-github-achievements)さたみたいで、Pull Shark`もそのひとつみたいですね。
+最近Githubに[Achievementsのバッチが追加](https://zenn.dev/nyancat/articles/20220612-github-achievements)さたみたいで、`Pull Shark` もそのひとつみたいですね。
 
 他にも変わったところないかなーと思ってみてみると、草生やしてるところになんか追加されてました。  
 ↓草生やしてるところ
@@ -19,14 +19,13 @@ Githubのプロフィール画面なんて滅多に開かないんですが、�
 
 ![NEW! View your contributions in 3D, VR and IRL!](https://storage.googleapis.com/zenn-user-upload/58e706d6be7d-20220618.png)
 
-`NEW! View your contributions in 3D, VR and IRL!`ってなんだと思ってクリックしてみるとカッコよくなった草生やしてるやつが見れました。
-
+`NEW! View your contributions in 3D, VR and IRL!` ってなんだと思ってクリックしてみるとカッコよくなった草生やしてるやつが現れました。
 GitHubSkylineって名前らしいです。
 ![](https://storage.googleapis.com/zenn-user-upload/71ebf12fa3d4-20220618.gif)
 
-ダウンロードできるっぽいのでしてみるとslt形式の草生やしてるやつがダウンロードできました。
+ダウンロードボタンからダウンロードしてみるとslt形式の草生やしてるやつがダウンロードできます。
 
-3Dデータをblender経由でBabylon.jsで表示できるように変換できるものがあるらしいです。
+[前にbabylonjsについて調べた際](https://zenn.dev/ymmt1089/articles/20220520_babylonjs)に見たんですが、3Dデータをblender経由でBabylon.jsで表示できるように変換できるものがあるらしいです。
 この機会にGitHubSkylineのデータを使って試してみます。  
 
 # 余談
