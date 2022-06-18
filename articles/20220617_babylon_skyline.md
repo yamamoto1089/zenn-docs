@@ -19,7 +19,7 @@ Githubのプロフィール画面なんて滅多に開かないんですが、�
 
 ![NEW! View your contributions in 3D, VR and IRL!](https://storage.googleapis.com/zenn-user-upload/58e706d6be7d-20220618.png)
 
-`NEW! View your contributions in 3D, VR and IRL!`ってなんだと思ってクリックしてみるとカッコよくなった草生やしてるやつが見れました。
+`NEW! View your contributions in 3D, VR and IRL!` ってなんだと思ってクリックしてみるとカッコよくなった草生やしてるやつが見れました。
 
 GitHubSkylineって名前らしいです。
 ![](https://storage.googleapis.com/zenn-user-upload/71ebf12fa3d4-20220618.gif)
