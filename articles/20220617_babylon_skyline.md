@@ -8,7 +8,7 @@ published: false
 
 # はじめに
 
-Githubのプロフィール画面なんて滅多に開かないんですが、久しぶりに見てみると`Pull Shark`とかいうバッチが追加されてました。  
+Githubのプロフィール画面なんて滅多に開かないんですが、久しぶりに見てみると `Pull Shark` とかいうバッチが追加されてました。  
 ![](https://storage.googleapis.com/zenn-user-upload/90408d9e6d8a-20220618.png)
 
 最近Githubに[Achievementsのバッチが追加](https://zenn.dev/nyancat/articles/20220612-github-achievements)さたからみたいですね。
