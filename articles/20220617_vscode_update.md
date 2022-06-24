@@ -17,7 +17,7 @@ published: false
 
 # フォントをJetBrainsMonoに変更する
 JetBrainsのIDEで使用されている[JetBrainsMono](https://www.jetbrains.com/ja-jp/lp/mono/)に変更します。  
-“1”,“l”,“I”、“0”,“O”などの文字を識別しやすくしていたり、シンプルな書式にすることで可読性を上げたフォントなので良いです。  
+“1”、“l”、“I”や“0”、“O”などの文字を識別しやすくしていたり、シンプルな書式にすることで可読性を上げたフォントなので良いです。  
 
 ## フォントのダウンロード
 https://www.jetbrains.com/ja-jp/lp/mono/#ligatures
@@ -39,7 +39,7 @@ VScodeの設定を開き、検索ボックスで `font family` を検索しま�
 
 # サイドバーの位置を右に変更する
 通常サイドバーは左に配置されていますが、これを右に変更します。  
-サイドバーを表示/非表示(`command+B`)した際に、読んでいるファイルの位置が右にずれること防ぎたいためです。
+サイドバーを表示/非表示(`command+B`)した際に、読んでいるファイルの位置が右にずれることを防ぎたいためです。
 
 * サイドバーを左に表示した場合(通常状態)
   開いているファイルがサイドバー分右にずれて読みにくい
@@ -66,7 +66,7 @@ apiから返却されたjsonデータとかをフォーマットして見やす�
 ```
 {key1:'value',key2:'value',key3:'value',key4:'value',key5:'value',key6:'value',key7:'value'}
 ```
-`option + shift + F` でフォーマットを試みると、言語モードが指定されていないのでこのようなモーダルが表示されます。
+`option + shift + F` でフォーマットを試みると、言語モードが指定されていないのでこのような警告が表示されます。
 ![](https://storage.googleapis.com/zenn-user-upload/5bc5bfd1bfe3-20220625.png)
 
 いちいち設定から言語モードを設定するのは面倒なのでショートカットキー化します。
@@ -84,15 +84,12 @@ apiから返却されたjsonデータとかをフォーマットして見やす�
 
 設定は完了です。これでファイルを保存せずにキー入力だけでフォーマットが行える様になりました。  
 ![](https://storage.googleapis.com/zenn-user-upload/cecf23858d54-20220625.gif)
-* command+N
-  * 新規ファイル追加
-* command+V
-  * フォーマットしたいテキストをペースト
-* command+shift+I
-  * 言語モードの設定開く
+↑で行なった動作
+* command+N (新規ファイル追加)
+* command+V (フォーマットしたいテキストをペースト)
+* command+shift+I (言語モードの設定開く)
 * フォーマットしたい言語形式を入力しEnter
-* option+shift+F
-  * フォーマット
+* option+shift+F (フォーマットを走らせる)
 
 
 # おわりに
