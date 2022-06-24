@@ -3,7 +3,7 @@ title: "VSCodeを自分仕様にしていく"
 emoji: "⚙️"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["vscode","tips"]
-published: false
+published: true
 ---
 
 # はじめに
@@ -94,4 +94,4 @@ apiから返却されたjsonデータとかをフォーマットして見やす�
 
 # おわりに
 「こうした方がいいよ」とか「こんなのもあるよ」とかあれば教えてほしいです🙇‍♂️  
-今後も定期的に更新していきます
+今後も定期的に更新していきます。
