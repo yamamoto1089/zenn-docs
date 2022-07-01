@@ -15,11 +15,11 @@ published: true
 * サイドバーの位置を右に変更する
 * 言語モードの変更をショートカットに割り当てる
 
-# フォントをJetBrainsMonoに変更する
+## フォントをJetBrainsMonoに変更する
 JetBrainsのIDEで使用されている[JetBrainsMono](https://www.jetbrains.com/ja-jp/lp/mono/)に変更します。  
 “1”、“l”、“I”や“0”、“O”などの文字を識別しやすくしていたり、シンプルな書式にすることで可読性を上げたフォントなので良いです。  
 
-## フォントのダウンロード
+### フォントのダウンロード
 https://www.jetbrains.com/ja-jp/lp/mono/#ligatures
 JetBrainsのサイトからJetBrainsMonoをダウンロードします。  
 `JetBrainsMono.zip` を解凍し、`fonts` -> `ttf` から好きなフォントを選択しインストールします。  
@@ -29,7 +29,7 @@ JetBrainsのサイトからJetBrainsMonoをダウンロードします。
 * `JetBrainsMonoNL-Italic.ttf`
 * `JetBrainsMonoNL-Bold.ttf`
 
-## VSCodeのフォント指定
+### VSCodeのフォント指定
 VScodeの設定を開き、検索ボックスで `font family` を検索します。  
 画像の赤枠部分のように `Editor:Font Family` の項目があるので、そこに `JetBrains Mono` を追加します。  
 ![](https://storage.googleapis.com/zenn-user-upload/f19ab960621e-20220624.png)
@@ -37,7 +37,7 @@ VScodeの設定を開き、検索ボックスで `font family` を検索しま�
 左に記載されているフォントが優先されるので、一番左に記載します。  
 あとはVSCodeを再起動すればJetBrainsMonoのフォントで表示されます。
 
-# サイドバーの位置を右に変更する
+## サイドバーの位置を右に変更する
 通常サイドバーは左に配置されていますが、これを右に変更します。  
 サイドバーを表示/非表示(`command+B`)した際に、読んでいるファイルの位置が右にずれることを防ぎたいためです。
 
@@ -49,7 +49,7 @@ VScodeの設定を開き、検索ボックスで `font family` を検索しま�
   開いているファイルがずれることがなく読みやすい
 ![](https://storage.googleapis.com/zenn-user-upload/268f67929ffc-20220624.gif)
 
-## サイドバーなどのレイアウトの変更
+### サイドバーなどのレイアウトの変更
 画面右上の `レイアウトのカスタマイズ` のアイコンを押します。
 ![](https://storage.googleapis.com/zenn-user-upload/851c9fc461a6-20220624.png)
 
@@ -58,7 +58,7 @@ VScodeの設定を開き、検索ボックスで `font family` を検索しま�
 
 他にもレイアウトが変更したい場合は `レイアウトのカスタマイズ` から変更できます。
 
-# 言語モードの変更をショートカットに割り当てる
+## 言語モードの変更をショートカットに割り当てる
 apiから返却されたjsonデータとかをフォーマットして見やすくしたい場面が稀にあります。
 しかし保存していないファイルをフォーマットしたい場合は、言語モードを設定しなければうまくフォーマットが走りません。  
 
@@ -71,7 +71,7 @@ apiから返却されたjsonデータとかをフォーマットして見やす�
 
 いちいち設定から言語モードを設定するのは面倒なのでショートカットキー化します。
 
-## 言語モードのショートカット割り当て方法
+### 言語モードのショートカット割り当て方法
 `command + shift + P` でコマンドパレットを表示し、「言語モード」と入力します。  
 「言語モードの変更」の項目が表示されるので、右側の歯車マークを押します。  
 ![](https://storage.googleapis.com/zenn-user-upload/6dee3e03633d-20220625.png)
@@ -90,7 +90,6 @@ apiから返却されたjsonデータとかをフォーマットして見やす�
 * command+shift+I (言語モードの設定開く)
 * フォーマットしたい言語形式を入力しEnter
 * option+shift+F (フォーマットを走らせる)
-
 
 # おわりに
 「こうした方がいいよ」とか「こんなのもあるよ」とかあれば教えてほしいです🙇‍♂️  
