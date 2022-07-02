@@ -28,7 +28,7 @@ hogeの属性で要素を取得する方法について、知らなかったの�
 ```html
 <div id="id_name" class="class_name" hoge="fuga">
 ```
-idやclass属性以外から取得する場合は`querySelector`取得できます。
+idやclass属性以外から取得する場合は `querySelector` 取得できます。
 
 ```js
 document.querySelector('[hoge="fuga"]');
@@ -69,7 +69,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 ここで対応策は2つあり、「スニペットのscriptにid属性を追加してgetElementByIdで要素を取得して削除」か「idやclass以外の属性から要素を取得できる方法を探す」です。
 
 * スニペットのscriptにid属性を追加してgetElementByIdで要素を取得して削除  
-  先程のGTMのサンプルを例にとると`j.id='hoge';`を追加してid属性を付与すれば可能です。
+  先程のGTMのサンプルを例にとると `j.id='hoge';` を追加してid属性を付与すれば可能です。
 ```html
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
