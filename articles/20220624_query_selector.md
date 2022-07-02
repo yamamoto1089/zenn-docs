@@ -1,9 +1,9 @@
 ---
 title: "idやclass以外の属性から要素を取得したい時"
-emoji: "♲"
+emoji: "📎"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['html','javascript']
-published: false
+published: true
 ---
 
 # はじめに
@@ -47,6 +47,7 @@ querySelectorで指定した文字列に一致する要素を返却してくれ�
 # 余談
 本題から逸れますが、なぜidやclass以外の属性から要素を取得する必要があったかについて覚えてる範囲で書いていきます。  
 
+## 経緯
 稀にサイト上にスニペットタグを埋め込む必要があります。  
 ↓GTMのスニペットタグ（サンプル）
 ```html
@@ -65,10 +66,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 ```html
 <script async src="https://xxx.js"></script>
 ```
-
+## 対応策
 ここで対応策は2つあり、「スニペットのscriptにid属性を追加してgetElementByIdで要素を取得して削除」か「idやclass以外の属性から要素を取得できる方法を探す」です。
 
-* スニペットのscriptにid属性を追加してgetElementByIdで要素を取得して削除  
+### スニペットのscriptにid属性を追加してgetElementByIdで要素を取得して削除  
   先程のGTMのサンプルを例にとると `j.id='hoge';` を追加してid属性を付与すれば可能です。
 ```html
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -79,8 +80,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.id='hoge';j.src
 ```
 しかし、id属性を追加するだけとはいえ、提供されているスニペット内部を変更することに抵抗があります。可能であればスニペット内に変更を加えずに要素を取得したい。。。
 
-* idやclass以外の属性から要素を取得できる方法を探す  
-  ここで記事の本題に戻ってきます。
+### idやclass以外の属性から要素を取得できる方法を探す  
+  ここで記事の本題に戻ってきます。  
+  シンプルな解決方法が一番です。  
 
 # おわりに
 querySelectorを使うという初歩的なことで解決できました。  
