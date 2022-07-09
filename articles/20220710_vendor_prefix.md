@@ -18,16 +18,17 @@ published: false
 
 要するにブラウザで標準化されていない非標準のCSSプロパティを使用する場合に、プレフィックスを追加することで利用できるようになるということです。  
 ベンダープレフィックスはブラウザによって形式が異なっており、主なプレフィックスと対応ブラウザは以下になります。  
-※詳しくは後述。
+
+*※詳しくは後述。*
 
 | ベンダープレフィックス | ブラウザ | 備考 |
 | ---- | ---- | ---- |
-| -webkit- | Chrome<br>Safari<br>Opera(バージョン15以降)<br>MicrosoftEdge(Chromium採用以降)<br>ほぼすべての iOS ブラウザー (Firefox for iOS を含む) |  |
-| -moz- | Firefox |  |
-| -o- | Opera(バージョン15以前) | Operaはバージョン15(2013年2月13日リリース)からChromiumベースに作り直し、レンダリングエンジンもwebkitに変更。よって現在はあまり使われない。 |
-| -ms- | InternetExplorer <br>MicrosoftEdge(Chromium採用前) | InternetExplorerは2022年6月15日にサポート終了。<br>MicrosoftEdgeは2020年1月15日にChromiumを採用。よって現在はあまり使われない。  |
+| -webkit- | Chrome, Safari, Opera(バージョン15以降), MicrosoftEdge(Chromium採用以降), ほぼすべての iOS ブラウザー (Firefox for iOS を含む) | - |
+| -moz- | Firefox | - |
+| -o- | Opera(バージョン15以前) | Operaはバージョン15(2013年2月13日リリース)からChromiumベースに作り直し、レンダリングエンジンもwebkitに変更。<br>よって現在はあまり使われない。 |
+| -ms- | InternetExplorer , MicrosoftEdge(Chromium採用前) | InternetExplorerは2022年6月15日にサポート終了。, MicrosoftEdgeは2020年1月15日にChromiumを採用。<br>よって現在はあまり使われない。  |
 
-ベンダープレフィックスの使用例
+*ベンダープレフィックスの使用例*
 ```css
 -webkit-transition: all 4s ease;
 -moz-transition: all 4s ease;
@@ -37,8 +38,10 @@ transition: all 4s ease;
 ```
 
 # ベンダープレフィックスとレンダリングエンジンの関係
-ベンダープレフィックスがブラウザごとに違うのはレンダリングエンジンと関係があります。  
-レンダリングの仕組みについては[こちら](https://zenn.dev/oreo2990/articles/280d39a45c203e)の記事が参考になりました。  
+ベンダープレフィックスがブラウザごとに違うのは[レンダリングエンジン](https://ja.wikipedia.org/wiki/HTML%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3)と関係があります。  
+レンダリングの仕組みについては[Webブラウザのレンダリングの仕組みを理解する](https://zenn.dev/oreo2990/articles/280d39a45c203e)の記事が参考になりました。  
+
+ベンダープレフィックスとレンダリングエンジンの歴史について、調べた範囲で軽く触れていきます。  
 
 ## 各ブラウザとレンダリングエンジンの歴史
 以前はそれぞれのブラウザで異なるレンダリングエンジンを採用していた様です。  
@@ -55,13 +58,17 @@ transition: all 4s ease;
 | MicrosoftEdge | EdgeHTML | -ms- |
 
 ### Chromiumの導入
-しかし[Chromium](https://ja.wikipedia.org/wiki/Chromium)を採用するブラウザが増えたことで、徐々にレンダリングエンジンも統一されていきました。  
-ChromiumはChromeのブラウザを作成するベースにもなっているため、レンダリングエンジンにはWebkitが使用されていました。  
-まずは2013年2月13日にOperaがChromiumベースに乗り換え、2020年1月15日にMicrosoftEdgeがChromium版をリリースしました。  
-これにより主要ブラウザで使用されるレンダリングエンジンからPrestoとEdgeHTMLが消えることになりました。2022年6月15日にはInternetExplorerのサポートが終了しました。  
-実質的にベンダープレフィックスから `-o-`,`-ms-` が使用されることはほぼなくなります。  
+[Chromium](https://ja.wikipedia.org/wiki/Chromium)を採用するブラウザが増えたことで、徐々にレンダリングエンジンも統一されていきました。  
+ChromiumはChromeのブラウザを作成するベースにもなっているため、レンダリングエンジンには[Webkit](https://zenn.dev/azunasu/articles/581153b9ec1f92#webkit%E3%81%A8%E3%81%AF%EF%BC%9F)が使用されていました。  
 
-後にChromiumはレンダリングエンジンをWebkitからBlinkに乗り換えます。  
+
+まずは2013年2月13日にOperaがChromiumベースに乗り換え、2020年1月15日にMicrosoftEdgeがChromium版をリリースしました。  
+これにより主要ブラウザで使用されるレンダリングエンジンからPrestoとEdgeHTMLが消えることになりました。  
+
+2022年6月15日にはInternetExplorerのサポートが終了しました。  
+これによりベンダープレフィックスから `-o-`,`-ms-` が使用されることはほぼなくなります。  
+
+後にChromiumはレンダリングエンジンをWebkitから[Blinkに乗り換え](https://wayohoo.com/article/4526)ます。  
 BlinkはWebkitからフォークされたレンダリングエンジンなのでベンダープレフィックスは `-webkit-` が使用できます。  
 
 この様な背景から、現在の主要なブラウザとレンダリングエンジンは以下の様になっています。  
