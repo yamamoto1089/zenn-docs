@@ -14,6 +14,7 @@ published: true
 * フォントをJetBrainsMonoに変更する
 * サイドバーの位置を右に変更する
 * 言語モードの変更をショートカットに割り当てる
+* tips
 
 ## フォントをJetBrainsMonoに変更する
 JetBrainsのIDEで使用されている[JetBrainsMono](https://www.jetbrains.com/ja-jp/lp/mono/)に変更します。  
@@ -90,6 +91,37 @@ apiから返却されたjsonデータとかをフォーマットして見やす�
 * command+shift+I (言語モードの設定開く)
 * フォーマットしたい言語形式を入力しEnter
 * option+shift+F (フォーマットを走らせる)
+
+## tips
+### サイドバー表示/非表示
+command + B
+
+### ターミナル表示/非表示
+command + J
+
+### エクスプローラー表示
+command + shift + E
+
+### 全体検索
+command + shift + F
+
+### 置換
+command + option + F
+
+### フォーマット
+option + shift + F
+
+### カーソルを複数選択(任意)
+option + クリック
+
+### カーソルを複数選択（全体）
+option + shift+ クリック
+
+### ファイルを開く
+command + P + 検索ワード
+
+### コマンドパレットを開く
+command + shift + P
 
 # おわりに
 「こうした方がいいよ」とか「こんなのもあるよ」とかあれば教えてほしいです🙇‍♂️  
