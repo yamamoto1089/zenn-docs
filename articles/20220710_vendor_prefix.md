@@ -3,7 +3,7 @@ title: "ベンダープレフィックスについて調べてみた"
 emoji: "🖥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['css','html','javascript','ブラウザ']
-published: false
+published: true
 ---
 
 # はじめに
