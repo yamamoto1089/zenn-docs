@@ -2,8 +2,8 @@
 title: "safariのレスポンシブ・デザイン・モードを活用する"
 emoji: "🧭"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ['safari','devtools']
-published: false
+topics: ['safari','devtools','css','html']
+published: true
 ---
 
 # はじめに
