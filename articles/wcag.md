@@ -13,5 +13,5 @@ WCAGが何かについてざっくり調べました。
 
 # WCAGとは
 
-WCAGは`Web Content Accessibility Guidelines`の略です。
+WCAGは `Web Content Accessibility Guidelines` の略です。
 
