@@ -19,7 +19,6 @@ HTML,CSS(SCSS)を用いたシンプルなマークアップ用の環境構築の
 * .gitignoreの設定
 * gulpfileの設定
 * editorconfigの設定
-https://ics.media/entry/3405/
 
 # 手順
 
