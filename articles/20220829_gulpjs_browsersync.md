@@ -2,8 +2,8 @@
 title: "Gulp.js+Browsersyncでシンプルなマークアップ環境構築"
 emoji: "🥤"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ['css','html']
-published: false
+topics: ['css','html','gulp','browsersync']
+published: true
 ---
 
 # 記事の内容
