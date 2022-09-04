@@ -3,7 +3,7 @@ title: "画像の差分検出でimageMagickを使ってみた"
 emoji: "🫥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['HTML','design','imageMagick']
-published: false
+published: true
 ---
 # はじめに
 
@@ -14,15 +14,13 @@ web制作ではデザインに合わせてマークアップを行うため、�
 
 # imageMagickインストール
 
-インストール
-
 インストール方法は[公式サイト](https://imagemagick.org/script/download.php)にいくつか記載されていますが、Homebrewでインストールします。
 
 ```
 brew install imagemagick
 ```
 
-インストールされたことを確認。
+一応インストールされたことを確認。
 
 ```
 convert -version
@@ -33,7 +31,7 @@ convert -version
 composieで画像の比較ができます。  
 
 ```
-composite -compose difference {比較画像A} {比較画像B} (出力結果)
+composite -compose difference {比較画像A} {比較画像B} {出力結果}
 ```
 
 ## 差分がない場合
@@ -45,11 +43,11 @@ composite -compose difference {比較画像A} {比較画像B} (出力結果)
 composite -compose difference imageA.jpeg imageA.jpeg diff.jpg
 ```
 
-比較画像imageA.jpeg  
+比較画像  imageA.jpeg  
 ![](https://storage.googleapis.com/zenn-user-upload/97f28a111eef-20220904.jpeg)
 
 
-出力結果diff.jpeg  
+出力結果  diff.jpeg  
 ![](https://storage.googleapis.com/zenn-user-upload/754fe320c728-20220904.jpg)
 
 
@@ -57,13 +55,13 @@ composite -compose difference imageA.jpeg imageA.jpeg diff.jpg
 
 比較箇所で色に差分がある箇所は黒色以外で出力されます。  
 
-比較画像imageA.jpeg  
+比較画像  imageA.jpeg  
 ![](https://storage.googleapis.com/zenn-user-upload/97f28a111eef-20220904.jpeg)
 
-比較画像imageB.jpeg  
+比較画像  imageB.jpeg  
 ![](https://storage.googleapis.com/zenn-user-upload/1b5d45f63022-20220904.jpeg)
 
-出力結果diff.jpeg  
+出力結果  diff.jpeg  
 ![](https://storage.googleapis.com/zenn-user-upload/1e63fd3ba3f7-20220904.jpg)
 
 # 実際のサイトで試してみる
@@ -82,13 +80,13 @@ composite -compose difference imageA.jpeg imageA.jpeg diff.jpg
 composite -compose difference Zenn_A.jpeg Zenn_B.jpeg diff.jpg
 ```
 
-比較画像Zenn_A.jpeg  
+比較画像  Zenn_A.jpeg  
 ![](https://storage.googleapis.com/zenn-user-upload/4fd49ba95d37-20220904.png)
 
-比較画像Zenn_B.jpeg絵文字部分や文字を少しだけ変更したもの  
+比較画像  Zenn_B.jpeg  絵文字部分や文字を少しだけ変更したもの  
 ![](https://storage.googleapis.com/zenn-user-upload/87272eb12e08-20220904.png)
 
-出力結果diff.jpeg  
+出力結果  diff.jpeg  
 ![](https://storage.googleapis.com/zenn-user-upload/c4ada0a13de5-20220904.jpg)
 
 文字や絵文字の変更部分のみが出力されるので変更箇所が一目でわかります。  
@@ -101,13 +99,13 @@ composite -compose difference Zenn_A.jpeg Zenn_B.jpeg diff.jpg
 composite -compose difference Zenn_A.jpeg Zenn_C.jpeg diff.jpg
 ```
 
-比較画像Zenn_A.jpeg  
+比較画像  Zenn_A.jpeg  
 ![](https://storage.googleapis.com/zenn-user-upload/4fd49ba95d37-20220904.png)
 
-比較画像Zenn_C.jpeg  
+比較画像  Zenn_C.jpeg  
 ![](https://storage.googleapis.com/zenn-user-upload/a1c26edb9a3b-20220904.png)
 
-出力結果diff.jpeg  
+出力結果  diff.jpeg  
 ![](https://storage.googleapis.com/zenn-user-upload/610b6273e7ac-20220904.jpg)
 
 マージンなどが変更されている場合は差分箇所が多く出力されてしまい、ずれを検出する方法としては実用的ではないですね。
