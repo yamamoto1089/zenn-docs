@@ -3,7 +3,7 @@ title: "形態素解析で使用する辞書の使い分けについて"
 emoji: "📚"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["mecab",'juman','ipadic','unidic','形態素解析']
-published: false
+published: true
 ---
 
 MeCabのインストールについては前回の記事参照
