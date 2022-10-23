@@ -36,13 +36,13 @@ HardSourceWebpackPlugin自体はキャッシュを生成することで2回目�
 # 余談
 
 [hardsourceの問題を解決するPR](https://github.com/mzgoddard/hard-source-webpack-plugin/pull/497)が2019年4月時点で挙げられていますが一向にマージされる気配がありません。  
-色々調べていくと、そもそもHardSourceWebpackPlugin更新されていないようですね。  
+色々調べていくと、そもそもHardSourceWebpackPlugin自体更新されていないようですね。  
 
-PRには「まだマージされないの？」みたいなコメントがいくつかついており、みんながこの問題を解消するPRがマージされることを心待ちにしてい流ものの、開発者からの音沙汰なしのようです。
+PRには「まだマージされないの？」と[コメント](https://github.com/mzgoddard/hard-source-webpack-plugin/pull/497#issuecomment-604683349)がいくつかついており、みんながこの問題を解消するPRがマージされることを心待ちにしているものの、開発者からの音沙汰なしのようです。
 
 そんな中2020年5月30日に開発者の昔の同僚が「どのPRをマージすべきか教えて」みたいな[issue](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/525)を起票しました。  
 
-2020年の8月にはそのissueに対して「このPRはマージしても安全だよ」みたいな[コメント](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/416)が付いていました。  
+2020年の8月にはそのissueに対して「このPRはマージしても安全だよ」という[コメント](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/416)が付いていました。  
 それでも開発者の昔の同僚からのアクションはなく、いまだにマージされていないようですね。  
 
 個人的な意見ですが、そもそもHardSourceWebpackPluginに頼らずにビルドが重い原因を探して対応することも必要かもしれないですね。  
