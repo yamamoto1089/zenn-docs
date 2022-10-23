@@ -1,5 +1,5 @@
 ---
-title: "HardSourceWebpackPluginでエラーが出た場合の対処法"
+title: "HardSourceWebpackPluginのビルドでエラーが出た場合の対処法"
 emoji: "🛠"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['node.js','HardSourceWebpackPlugin','webpack']
