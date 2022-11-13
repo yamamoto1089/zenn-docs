@@ -15,15 +15,18 @@ published: true
 引用: https://developer.mozilla.org/ja/docs/Web/API/console/log#%E5%BC%95%E6%95%B0
 
 # 試してみる
+
+実際にオブジェクト参照になる挙動や対処法を試してみます。  
 ## オブジェクト参照の出力
 
 オブジェクト参照か試してみます。  
 
 ![](https://storage.googleapis.com/zenn-user-upload/fa31956f0b0f-20221103.png)  
 
-1回目出力と2回目出力の間にfirstNameをyamamotoに変更する処理を挟みましたが、どちらもfirstNameはyamamotoになっていますね。  
+1回目出力と2回目出力の間に**firstName**を**yamamoto**に変更する処理を挟みましたが、どちらも**firstName**は**yamamoto**になっていますね。  
 
 でもログ出力したい場合はオブジェクト参照ではなくプリミティブな値としてログを出したい場合の方が多いはずです。  
+今回の例だとconsole.logで出力した時点での値を出力するようにします。  
 
 ## JSON.parse(JSON.stringify())を使用する
 
