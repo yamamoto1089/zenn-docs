@@ -3,7 +3,7 @@ title: "GithubActionsのnodeバージョンをpackage.jsonから取得する"
 emoji: "🐙"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['GithubActions','volta','package.json']
-published: false
+published: true
 ---
 
 # はじめに
