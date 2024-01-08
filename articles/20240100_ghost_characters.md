@@ -3,7 +3,7 @@ title: "幽霊文字ってなんだ"
 emoji: "👻"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["幽霊文字", "unicode", "文字コード"]
-published: false
+published: true
 ---
 
 :::message
