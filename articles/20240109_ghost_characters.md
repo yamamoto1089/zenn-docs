@@ -1,15 +1,10 @@
 ---
-title: "幽霊文字ってなんだ"
+title: "幽霊文字について調べてみた"
 emoji: "👻"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["幽霊文字", "unicode", "文字コード"]
-published: false
+published: true
 ---
-
-:::message
-幽霊文字がなぜ存在するか、なぜ修正されないのか、についてざっくりまとめた小ネタ記事です。  
-誤っている部分あればご指摘いただけると嬉しいです。
-:::
 
 # 幽霊文字とは
 
