@@ -8,7 +8,7 @@ published: false
 
 # はじめに
 
-そんなにないケースですが、yarn.lock のパッケージバージョンを取得したい時があります。
+そんなにないケースですが、yarn.lockのパッケージバージョンを取得したい時があります。
 
 # 結論
 
@@ -16,8 +16,8 @@ published: false
 
 ## license-checker-rseidelsohn とは
 
-license-checker との違い
+license-checkerとの違い
 
 ## 備考
 
-global install すればいいと思ったが推奨されていない
+global installすればいいと思ったが推奨されていない
