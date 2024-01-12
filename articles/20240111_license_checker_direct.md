@@ -11,13 +11,23 @@ published: false
 プロジェクトで使用しているパッケージの正確なバージョンを一覧化したい時ってありますよね（？）  
 そういうことがあったのでほぼ備忘録的に記事にします。
 
-#
-
 ついついpackage.jsonに記載されてるバージョンがパッケージのバージョンと思ってしまいがちですが、package.jsonに記載されているバージョンはバージョンの範囲を示しているだけで、実際に使用しているバージョンとは異なります。
 正確なバージョンはyarn.lockやpackage-lock.jsonに記載されているのでそこを参照する必要がありますが1つ1つ確認するのは大変です。
-一覧で取得したい場合はlicense-checker-rseidelsohnを使うと簡単に取得できます。
+一覧で取得したい場合はlicense-checker-rseidelsohnを使うと以下のコマンドで取得できます。
 
-# やっていること
+```zsh
+yarn license-checker-rseidelsohn --product --direct 0 --json
+```
+
+# 結果から
+
+`license-checker-rseidelsohn` をインストールした前提以下でコマンド実行するとyarn.lockに記載されているパッケージの正確なバージョン一覧がjsonで取得できます。
+
+```zsh
+yarn license-checker-rseidelsohn --product --direct 0 --json
+```
+
+# 手順
 
 ## license-checker は使えなかった
 
