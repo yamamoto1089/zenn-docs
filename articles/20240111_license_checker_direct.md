@@ -3,7 +3,7 @@ title: "yarn.lockに記載されているパッケージバージョン一覧を
 emoji: "🔏"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["yarn", "npm"]
-published: false
+published: true
 ---
 
 # はじめに
@@ -128,6 +128,11 @@ $ {path}/node_modules/.bin/license-checker-rseidelsohn --production --direct 0 -
 > Yarn focuses on project management, and managing system-wide packages was deemed to be outside of our scope. As a result, yarn global got removed and needs to be replaced by yarn dlx to run one off scripts.
 
 参考: https://yarnpkg.com/migration/guide#use-yarn-dlx-instead-of-yarn-global
+
+# おわりに
+
+もっと簡単に一覧取得できる方法ある気がしますが、今回は license-checker-rseidelsohn を使って一覧化しました。  
+json 形式で出力できればどうにでもなりそうですが、こういうのパッとできるようになりたいです。
 
 # 参考記事
 
