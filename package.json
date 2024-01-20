@@ -30,7 +30,7 @@
     "tag": "^0.4.17",
     "tilde": "^0.1.1",
     "version": "^0.1.2",
-    "zenn-cli": "^0.1.108"
+    "zenn-cli": "^0.1.151"
   },
   "devDependencies": {
     "license-checker-rseidelsohn": "^4.3.0",
