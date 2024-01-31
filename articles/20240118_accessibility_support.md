@@ -2,11 +2,9 @@
 title: "【アクセシビリティ】支援技術やブラウザのアクセシビリティ機能がサポートしているかを調べる"
 emoji: ""
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
+topics: ["a11y", "WCAG", "accessibility"]
 published: false
 ---
-
-# はじめに
 
 # アクセシビリティサポートとは
 
@@ -49,6 +47,14 @@ WCAG には以下のように記載されています。
 ## a11ysupport
 
 https://a11ysupport.io/
+
+## powermapper
+
+https://www.powermapper.com/tests/screen-readers/content/
+
+## WAIC のアクセシビリティサポーテッド検証結果
+
+https://waic.jp/guideline/as/
 
 # アクセシビリティサポーテッド
 
