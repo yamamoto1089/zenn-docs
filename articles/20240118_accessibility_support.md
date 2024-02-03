@@ -55,9 +55,18 @@ WCAG には以下のように記載されています。
 
 https://a11ysupport.io/
 
+各種スクリーンリーダー (JAWS、Narrator、NVDA、TalkBack、VoiceOver など) が、様々な HTML 要素や WAI-ARIA 属性に対して、それぞれどの程度対応しているかについて、テストした結果が開示されてるサイトです。
+W3C の [ARIA and Assistive Technology Community Group](https://www.w3.org/community/aria-at/) で共同議長を務める Michael Fairchild 氏が立ち上げたオープンソースのプロジェクトなので信頼性は高いです。
+
 ## powermapper
 
-https://www.powermapper.com/tests/screen-readers/content/
+https://www.powermapper.com/tests/
+
+NVDA、JAWS、VoiceOver などの一般的なスクリーン リーダーを含む支援技術 (AT) のテスト結果を公開しています。
+
+> スクリーンリーダーの ARIA の対応状況はそこまでではありませんが、多くの一般的なスクリーンリーダーはそれに近いものになってきています。 Powermapper による WAI-ARIA のスクリーンリーダーの互換性（英語）の記事で、サポート状況を確認することができます。
+
+引用: https://developer.mozilla.org/ja/docs/Learn/Accessibility/WAI-ARIA_basics#wai-aria_%E3%81%AF%E3%81%A9%E3%81%93%E3%81%A7%E5%AF%BE%E5%BF%9C%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8B
 
 ## WAIC のアクセシビリティサポーテッド検証結果
 
