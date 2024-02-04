@@ -63,6 +63,7 @@ W3C の [ARIA and Assistive Technology Community Group](https://www.w3.org/commu
 https://www.powermapper.com/tests/
 
 NVDA、JAWS、VoiceOver などの一般的なスクリーン リーダーを含む支援技術 (AT) のテスト結果を公開しています。
+WAI-ARIA のスクリーンリーダーの互換性についてという文脈で MDN にも記載があります。
 
 > スクリーンリーダーの ARIA の対応状況はそこまでではありませんが、多くの一般的なスクリーンリーダーはそれに近いものになってきています。 Powermapper による WAI-ARIA のスクリーンリーダーの互換性（英語）の記事で、サポート状況を確認することができます。
 
