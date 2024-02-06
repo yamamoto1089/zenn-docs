@@ -6,6 +6,11 @@ topics: ["a11y", "WCAG", "accessibility"]
 published: false
 ---
 
+:::message
+支援技術やブラウザがアクセシビリティサポーテッドかどうかを調べる方法についてまとめました。  
+具体的な実装方法などではなく、アクセシビリティサポーテッドかどうかを調べるための情報をまとめています。
+:::
+
 # アクセシビリティサポートとは
 
 WCAG には[アクセシビリティサポーテッド](https://waic.jp/translations/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head)という考え方があります。
@@ -15,7 +20,7 @@ WCAG には[アクセシビリティサポーテッド](https://waic.jp/translat
 
 WCAG には以下のように記載されています。
 
-> **「アクセシビリティ サポート」の技術的な定義**
+> **「アクセシビリティ サポート」の技術的な定義**  
 > 基本的に、ウェブコンテンツ技術は、利用者の使用している支援技術が対応していて、かつ、主流なユーザエージェントのアクセシビリティ機能が対応していれば、"アクセシビリティ サポーテッド" である。
 
 引用: https://waic.jp/translations/UNDERSTANDING-WCAG20/conformance.html
