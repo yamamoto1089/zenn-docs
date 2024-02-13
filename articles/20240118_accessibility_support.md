@@ -3,7 +3,7 @@ title: "ブラウザの支援技術がアクセシビリティサポーテッド
 emoji: "📎"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["a11y", "WCAG", "accessibility", "アクセシビリティ"]
-published: false
+published: true
 ---
 
 :::message  
